@@ -1,5 +1,7 @@
 # Human Pose Length Estimation Without a GPU
 
+![frame_138](https://github.com/bring-nirachornkul/Human-Landmark-Measurement/assets/89494368/8ac0899c-28ab-4246-8712-f021bacbd4c5)
+
 ## Overview
 
 This repository is part of an ongoing project aimed at estimating human body dimensions through pose landmarks. The focus is on calculating only the landmarks that are relevant for specific measurements like the length of the shoulder, upper arm, and so on. While the system is partially functional, work is still underway to refine various parameters for enhanced accuracy.
@@ -32,24 +34,41 @@ This program includes the following features:
 
 ## Usage
 
-(Here you can add instructions on how to run your code)
+### Prerequisites
+
+1. **Install Required Libraries:** To install the necessary Python packages, run the following command:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. **Chessboard for Calibration:** You need to print a chessboard pattern for calibrating the camera. Below are the specifications for the chessboard pattern:
+
+    - **Rows:** 8
+    - **Columns:** 11
+    - **Checker Width:** 20 mm
+  
+    You can generate a suitable chessboard pattern from this website: [Camera Calibration Pattern Generator](https://calib.io/pages/camera-calibration-pattern-generator)
+
+### Running the Programs
+
+1. **Camera Calibration:**
+    - Run the `Calibrate_camera.py` program.
+    - Make sure to update the input path in this file before running.
+    
+    This will generate a calibration file that will be used for pose estimation.
+
+2. **Human Landmark Measurement:**
+    - Run the `Human-Landmark-Measurement-V1.0` program.
+    - Don't forget to update the input path in this file before running.
+    
+    The output images and data will be saved in the `output_image` folder.
+
+> **Note:** The programs rely on camera calibration. Without a chessboard pattern, they will not function correctly.
+
 
 ## Requirements
 
-(Add a list of dependencies, libraries, and hardware requirements)
 
-
-Camera Calibration: This feature is integrated to ensure precise and consistent measurement. It employs Zhang's chessboard calibration method used in the first program.
-![frame_138](https://github.com/bring-nirachornkul/Human-Landmark-Measurement/assets/89494368/8ac0899c-28ab-4246-8712-f021bacbd4c5)
-
-This repo contains two programs :
-i) Camera calibrate - this program will 
-
-ii) 
-
-iii) 
-
-[Video](https://youtu.be/YNoQ9oRRBbg)
 
 
 Next mission : Find the estimate points of the movement. [point A to point B]

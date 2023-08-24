@@ -81,9 +81,7 @@ This program includes the following features:
 > **Note:** The programs rely on camera calibration. Without a chessboard pattern, they will not function correctly.
 
 
-## Requirements
+## Next mission
 
 
-
-
-Next mission : Find the estimate points of the movement. [point A to point B]
+Find the estimate points of the movement. [point A to point B]

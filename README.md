@@ -14,6 +14,9 @@ The repository is structured into two main programs:
 
 This program is designed to calibrate your PC's webcam. It performs a series of tasks to estimate the intrinsic and extrinsic parameters of the camera. Specifically, it calculates the camera matrix, distortion coefficients, translation vectors (`tVector`), and rotation vectors (`rVector`). These calibration parameters are then saved into a single file for later use in measurements. The calibration process employs Zhang's method using a chessboard pattern.
 
+
+
+
 ### 2. Human Landmark Measurement
 
 This program includes the following features:
@@ -49,6 +52,10 @@ This program includes the following features:
   
     You can generate a suitable chessboard pattern from this website: [Camera Calibration Pattern Generator](https://calib.io/pages/camera-calibration-pattern-generator)
 
+
+![Screenshot 2023-08-24 133250](https://github.com/bring-nirachornkul/Human-Landmark-Measurement/assets/89494368/d530cc1c-8826-4687-b809-ed3090db874b)
+
+
 ### Running the Programs
 
 1. **Camera Calibration:**
@@ -57,11 +64,19 @@ This program includes the following features:
     
     This will generate a calibration file that will be used for pose estimation.
 
+
+![img26](https://github.com/bring-nirachornkul/Human-Landmark-Measurement/assets/89494368/8a774b1b-927e-4b7b-964d-1afeed2bd163)
+
+
 2. **Human Landmark Measurement:**
     - Run the `Human-Landmark-Measurement-V1.0` program.
     - Don't forget to update the input path in this file before running.
     
     The output images and data will be saved in the `output_image` folder.
+
+![frame_168](https://github.com/bring-nirachornkul/Human-Landmark-Measurement/assets/89494368/4e858285-330b-4903-ae14-7e3bb9997b10)
+
+   
 
 > **Note:** The programs rely on camera calibration. Without a chessboard pattern, they will not function correctly.
 

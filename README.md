@@ -6,6 +6,6 @@ This is on going project. I created this program to detect only the landmarks th
 This repo contains two programs :
 i) Camera calibrate - this program will 
 
-https://youtu.be/YNoQ9oRRBbg
 
+[Video](https://youtu.be/YNoQ9oRRBbg)
 Next mission : Find the estimate points of the movement. [point A to point B]
